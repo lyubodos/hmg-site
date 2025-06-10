@@ -1,7 +1,67 @@
+@import '../../../assets/base/global';
 
 
 header {
-  padding: .75rem 5rem 1rem 4rem;
-  width: 100%;
-  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem 0 4rem;
+  background-color: $mainIvoryColor;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: $darkBlue;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: $mainRedColor;
+  }
+
+  button {
+    background: $mainOrange;
+    border-radius: 11px;
+    padding: 14px 20px;
+    color: $darkBlue;
+    display: inline-block;
+    font: normal bold 26px/1 "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  button:hover {
+    background: $mainRedColor;
+    color: $mainOrange;
+  }
+
+  button:active {
+    background: $mainOrange;
+    color: $darkBlue;
+  }
+}
+
+.header_logo {
+  display: block;
+  position: relative;
+  border-radius: 50%;
+  height: 98px;
+  width: auto;
+  object-fit: contain;
 }
